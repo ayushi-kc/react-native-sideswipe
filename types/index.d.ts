@@ -159,10 +159,17 @@ declare type CarouselProps<T> = {
    */
   style?: StyleProp<ViewStyle>;
 
+  
+
   /**
    * should we use native driver for animation.
    */
   useNativeDriver?: boolean;
+
+  /**
+   * Wrap swipes from end to start and vice-versa
+   */
+  loopSwipes?: boolean;
 };
 
 declare class Carousel<T> extends Component<CarouselProps<T>> {}
